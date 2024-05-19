@@ -1,11 +1,14 @@
+package com.WaterWatcher;
+
 import java.awt.*;
 
-public class Driver {
+public class Main {
+
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             GUI gui = new GUI();
-            gui.getSidebarView().addSite("Gardiner", "06192500");
-            gui.getSidebarView().addSite("Logan", "06052500");
+                gui.addSite("Gardiner", "06192500");
+                gui.addSite("Logan", "06052500");
         });
     }
 }
